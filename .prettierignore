@@ -1,0 +1,11 @@
+# Generated files
+pnpm-lock.yaml
+next-env.d.ts
+.next/
+out/
+build/
+coverage/
+
+# Local-only files that are not tracked in Git
+CLAUDE.local.md
+docs/architecture.md
