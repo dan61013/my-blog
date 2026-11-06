@@ -1,0 +1,26 @@
+# Normalize all text files to LF in the repo and in the working tree.
+* text=auto eol=lf
+
+# Windows-only scripts keep CRLF.
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Binary files: no line-ending conversion, no text diff.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.avif  binary
+*.ico   binary
+*.pdf   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.parquet binary
+
+# Lock files are generated; collapse them in diffs.
+pnpm-lock.yaml linguist-generated=true -diff
+uv.lock        linguist-generated=true -diff
